@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        margin: 25px;
+    }
+</style>
+<body>
+    <div style="text-align: center;">
+    <img src="../images/istad.png" alt="" width="1000" height="150">
+    </div>
+    <h1 align="center">
+        REGISTRATION FORM
+    </h1>
+    <p align="center" style="font-size: 20px;">Institute of Science and Technology Advanced Development</p>
+        <span>August 19<sup>th</sup>, 2022</span>
+    <div style="font-style: italic;"></div>
+        <span>ISTAD's Location: </span><br>
+        <span>#24, St. 562, Sangkat Boeung Kak I, Khan Toul Kork, Phnom Penh</span><br>
+        <a href="">Tel: 093 990 910 / 095 990 910</a> <br>
+        <span>Email: info.istad@gmail.com</span><br>
+        <span>Facebook: www.fb.com/istad/co</span>
+    </div>
+    <div style="text-align: right;">
+         <img src="../ro.jpg" alt="" width="200" height="250">
+    </div><br>
+    
+    <fieldset>
+        <legend align="center">
+            Personal Infomation<br>
+        </legend>
+            <label for="national_id">National ID</label><br>
+            <input type="tel" name="national_id" id="national_id" placeholder="095333899"><br>
+            <label for="name">Fullname</label><br>
+            <input type="text" name="name" id="name" placeholder="KEO Sovannpanharo" style="width: 300px;"><br>
+            <label for="Email">Email</label><br>
+            <input type="email" name="email" id="Email" placeholder="example@gmail.com">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password"><br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            </select>
+            <br>
+            <label for="course">Course</label><br>          
+            <input type="checkbox" name="course" id="web">
+            <label for="web">Web Design</label><br>
+            <input type="checkbox" name="course" id="java">
+            <label for="java">Java Programming</label><br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob"><br>
+            <label for="Address">Current Address</label><br>
+            <textarea name="address" id="Address" style="height: 150px; width: 200px;"></textarea><br>
+            <label for="want">What do you want?</label><br>
+            <input type="search" name="search" id="want" placeholder="Search here">
+            <input type="submit" value="Submit"><br>
+            <label for="flavor">Choose a flavor</label>
+            <input type="text" name="flavor" id="flavor"><br>
+            <label for="progress">File progress: </label>
+            <input type="range" name="progress" id="progress" step="70">
+            <label for="color">Select your favourite color: </label>
+            <input type="color" name="color" id="color">
+            <input type="file" name="file" id="file">
+            <input type="text" name="" id="">
+
+    </fieldset>
+
+</body>
+</html>
