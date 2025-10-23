@@ -1,0 +1,50 @@
+*{
+    background-color: rebeccapurple;
+    font-size: 1rem;
+}
+
+
+/* calling element select */
+body{
+    background-color: aquamarine;
+}
+
+p{
+    color: bisque;
+    font-variant: small-caps;
+}
+/* classname selector */
+.text-display{
+    color: brown;
+}
+#text-display{
+    color: aqua;
+}
+[width]{
+    width: 250px;
+    height: 250px;
+}
+/* data attributr style */
+[data-custom="lg"]{
+    font-size: 32px;
+}
+/* group selector */
+h1,h2,h3{
+    color: blue;
+}
+/* space selector */
+div span{
+    color: aqua;
+    font-size: 32px;
+}
+/* combinator > */
+ul>li{
+    list-style-type: none;
+}
+ul>a{
+    color: red;
+}
+/* pseudo */
+ul>li:nth-child(odd){
+    color: blue;
+}

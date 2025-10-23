@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+    <!-- Form -->
+     <form action="list.html" 
+     method="get" 
+     target="_blank"
+     enctype="text/plain"
+     >
+     <!-- application = HML/HTML form -->
+      <!-- multipart = binary / byte data -->
+       <!-- text/ plain ahsor tomda -->
+    <!-- Form body -->
+    <label for="yourName">Enter your name</label><br>
+    <input type="text" name="yourName" id="yourName" placeholder="KEO Sovannpanharo" required><br>
+
+    <label for="email">Enter your email</label><br>
+    <input type="email" name="email" id="email" placeholder="panharokeo@gmail.com" required><br>
+    <label for="password">Enter your password</label><br>
+    <input type="password" name="password" id="password" placeholder="ro123@!#" required pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?
+    [0-9])(?=.*?[#?!@$%^&*-]).{8,}$/"><br>
+    <label for="dob">Date of Birth</label><br>
+    <input type="date" name="dob" id="dob"><br>
+    <label for="dot">Date of birth(Datetime)</label><br>
+    <input type="datetime-local" name="dot" id="dot"><br>
+    <label for="checkbox">Choose your position</label><br>
+    <label for="student">Student</label>
+    <input type="checkbox" value="student" id="student"><br>
+    <label for="Employee">Employee</label>
+    <input type="checkbox" value="Employee id"="Employee"><br>
+    <!-- using checkbox with fieldset -->
+     <fieldset>
+        <legend>Choose your position:</legend>
+        <label for="student">Student</label>
+        <input type="checkbox" value="student" id="student" name="student"><br>
+        <label for="Employee">Employee</label>
+        <input type="checkbox" value="Employee id"="Employee" name="Employee"><br>
+     </fieldset>
+    <label for="file">Choose file</label><br>
+    <input type="file" name="file" id="file" accept="image/png, image/jpg, image/jpeg"><br>  
+    <label for="number">Number</label><br>
+    <input type="number" name="number" id="number"> <br>
+    <label for="telephone">Enter your phone number</label><br>
+    <input type="tel" name="telephone" id="telephone" value="0123456789" readonly pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+    <!-- readonly cant input -->
+     <label for="color">Color</label>
+     <input type="color" name="color" id="color"><br>
+     <label for="range">Range</label>
+     <input type="range" name="range" id="range" min="0" max="100" step="10"><br>
+     <label for="radio">Choose your gender</label><br>
+     <label for="female">Female</label>
+     <input type="radio" name="female" id="gender" value="gender">
+     <label for="male">Male</label>
+     <input type="radio" name="male" id="gender" value="gender"><br>
+     <label for="search">Search</label>
+     <input type="search" name="search" id="search"><br>
+     <select name="browser" id="browser">
+        <option value="Google Chrome">Google Chrome</option>
+        <option value="Microsoft Edge">Mircrosoft Edge</option>
+        <option value="Opera">Opera</option>
+     </select>
+     <br>
+     <label for="browser">Choose your browser</label>
+     <input list="favorite-browser" id="favorite-browser" name="favorite-browser">
+     <datalist>
+        <option value="Google Chrome">Google Chrome</option>
+        <option value="Microsoft Edge">Mircrosoft Edge</option>
+        <option value="Opera">Opera</option>
+     </datalist>
+     <label for="hidden">Hidden:</label>
+     <input type="hidden" name="hidden" value="secret-password" id="hidden">
+     <input type="reset" value="Reset"><br>
+     <label for="week">Week</label><br>
+     <input type="week" name="week" id="week"><br>
+     <label for="month">Month</label><br>
+     <input type="month" name="month" id="month"><br>
+     <label for="time">Time</label><br>
+     <input type="time" name="time" id="time"><br>
+     <input type="image" src="../AUPP_Logo.png" alt="AUPP logo" width="250"><br>
+     <label for="url">Enter https://</label>
+     <input
+        type="url"
+        name="url"
+        id="url"
+        placeholder="https://example.com"
+        pattern="https://.*"
+        size="30"
+        required /> <br>
+    <input type="button" value="PopOver" id="popover" popovertarget="display-gallery">
+    <div id="display-gallery" popover="auto">
+        <img src="https://i.pinimg.com/1200x/21/f9/b1/21f9b15d71cf787cf10823cf2c499f53.jpg" alt="cat muk due" width="150">
+    </div>
+    <input type="button" value="Button Submission" >
+    <!-- auto hint manual -->
+    <input type="submit" value="Submit Info"><br>
+    <textarea name="text-area" id="text-area"></textarea>
+     </form>
+</body>
+</html>
