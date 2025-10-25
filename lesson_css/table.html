@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Demonstration</title>
+    <style>
+        td>img{
+            width: 200px;
+        }
+        td>img:hover{
+            transform: scale(0.9);
+            transition-duration: 1s;
+        }
+        table{
+            border-collapse: collapse;
+            width: 750px;
+            overflow: hidden;
+            margin: auto;
+            text-align: center;
+        }
+        thead{
+            background-color: antiquewhite;
+            height: 50px;
+        }
+        tbody>tr:nth-child(even){
+            background-color: azure;
+        }
+        tbody>tr:nth-child(odd){
+            background-color: rgb(242, 236, 226);
+        }
+       
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matcha</td>
+                <td><img src="https://i.pinimg.com/1200x/29/46/85/294685132aaaafdf717f5644ba8d4197.jpg" alt="matcha"></td>
+                <td>Green</td>
+            </tr>
+            <tr>
+                <td>Coffee</td>
+                <td><img src="https://i.pinimg.com/1200x/92/18/fc/9218fcea495f1d4814cbb8af6f99a175.jpg" alt="Coffee"></td>
+                <td>Brown</td>
+            </tr>
+            <tr>
+                <td>Hojicha</td>
+                <td><img src="https://i.pinimg.com/736x/86/03/57/8603573a49f43a13f3345f5133261748.jpg" alt="Hojicha"></td>
+                <td>Light Brown</td>
+            </tr>
+            <tr>
+                <td>Iced tea</td>
+                <td><img src="https://i.pinimg.com/736x/37/6f/38/376f38066c01d3ef5194925c477d3715.jpg" alt="Iced tea"></td>
+                <td>Orange</td>
+            </tr>
+            <tr>
+                <td>Strawberry Frappe</td>
+                <td><img src="https://i.pinimg.com/736x/4b/c4/50/4bc45034791fc5e8770f5a6dbec71d6c.jpg" alt="Pink"></td>
+                <td>Pink</td>
+            </tr>
+            <tr>
+                <td>Coca Cola</td>
+                <td><img src="https://i.pinimg.com/736x/38/15/8d/38158d0aa6554f1a231df49626848cf3.jpg" alt="Coca"></td>
+                <td>Red</td>
+            </tr>
+            <tr>
+                <td>Milk Tea</td>
+                <td><img src="https://i.pinimg.com/1200x/94/85/89/9485897cef048fc3a91b7bcfa024f043.jpg" alt="Milk Tea"></td>
+                <td>White</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
