@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Demonstration</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: repeat(5,100px);
+            grid-template-columns: repeat(3,100px);
+            /* row-gap: 20px;
+            column-gap: 20px; */
+            gap: 20px;
+
+        }
+        .box{
+            /* width: 200px;
+            height: 200px; */
+            background-color: aliceblue;
+        }
+        .box-1{
+            background-color: blue;
+        }
+        .box-2{
+            background-color: rgb(255, 0, 0);
+        }
+        .box-3{
+            background-color: rgb(255, 81, 0);
+        }
+        .box-4{
+            background-color: rgb(255, 0, 119);
+        }
+        .box-5{
+            background-color: rgb(123, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2 </div>
+        <div class="box box-3">Box 3</div>
+        <div class="box box-4">Box 4</div>
+        <div class="box box-5">Box 5</div>
+    </div>
+</body>
+</html>
