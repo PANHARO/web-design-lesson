@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color: antiquewhite;
+            border-radius: 10%;
+            /* longhand */
+            /* animation-name: leftRight;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+            /* shorthand */
+            animation: leftRight 1s linear infinite alternate;
+        }
+        /* create animation using keyframe */
+        @keyframes leftRight{
+            /* from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: 30%;
+            } */
+             0%{
+                /* margin-left: 0; */
+                /* transform: scale(0.2); */
+                /* transform: rotate(20deg); */
+                /* transform: skew(30deg); */
+                transform: translateX(0);
+
+             }
+             20%{
+                /* margin-left: 20%; */
+                /* transform: scale(0.5); */
+                /* transform: rotate(90deg); */
+
+             }
+             100%{
+                /* margin-left: 50%; */
+                /* transform: scale(0.9); */
+                /* transform: rotate(180deg); */
+                /* transform: skew(60deg); */
+                transform: translateX(60px);
+
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>

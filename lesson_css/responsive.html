@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        }
+        .box{
+            border: 1px solid gainsboro;
+            border-radius: 25px;
+            display: flex;
+            background-color: azure;
+            align-items: center;
+            justify-content: center;
+        }
+        /* mobile phone */
+        @media(min-width: 576px){
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+        /* tablet or ipad */
+        @media(min-width: 768px){
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        /* laptop or large device */
+        @media(min-width: 992px){
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://i.pinimg.com/474x/90/c0/f3/90c0f3c04ad1487ca259338cfb83a396.jpg" alt="" width="250" height="250">
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/474x/90/c0/f3/90c0f3c04ad1487ca259338cfb83a396.jpg" alt="" width="250" height="250">
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/474x/90/c0/f3/90c0f3c04ad1487ca259338cfb83a396.jpg" alt="" width="250" height="250">
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/474x/90/c0/f3/90c0f3c04ad1487ca259338cfb83a396.jpg" alt="" width="250" height="250">
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/474x/90/c0/f3/90c0f3c04ad1487ca259338cfb83a396.jpg" alt="" width="250" height="250">
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/474x/90/c0/f3/90c0f3c04ad1487ca259338cfb83a396.jpg" alt="" width="250" height="250">
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/474x/90/c0/f3/90c0f3c04ad1487ca259338cfb83a396.jpg" alt="" width="250" height="250">
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/474x/90/c0/f3/90c0f3c04ad1487ca259338cfb83a396.jpg" alt="" width="250" height="250">
+        </div>
+    </div>
+</body>
+</html>
