@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+    /* custom color using --color */
+    --color-my-color: #8934fc;
+    --font-ruy-font: "Konkhmer Sleokchher", system-ui;
+}

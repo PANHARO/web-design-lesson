@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- link -->
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <!-- <h1 class="font-bold text-red-700">hello</h1> -->
+    <!-- responsive design of each device in tailwind they usually use with 5 breakpoints sm, md, lg, xl, 2xl, none set up (default smallest screen)-->
+    <!-- <div class="bg-amber-800 sm:bg-blue-800 md:bg-red-500 lg:bg-purple-600 xl:bg-cyan-500 2xl:bg-emerald-800 w-full h-72" >
+            responsive
+        </div> -->
+
+    <!-- hover, visit, focus, active, and other states in tailwind css -->
+
+    <button
+      class="border rounded-lg bg-blue-300 w-25 p-2 hover:bg-amber-400 cursor-pointer 
+      focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 active:bg-pink-500
+      "
+    ><a href="https://i.pinimg.com/1200x/79/a6/e0/79a6e0f48c915300f327589b597b3d0b.jpg" class="visited:bg-red-800 underline"
+     target="_blank"> Save us</a>
+    
+    </button>
+<ul role="list">
+    <!-- Remove top/bottom padding when first/last child -->
+    <li class="flex py-4 first:pt-0 last:pb-0 odd:bg-amber-200">
+      <img class="h-10 w-10 rounded-full" src=https://i.pinimg.com/736x/00/57/f1/0057f110c71586c0b4c77a3895bcd451.jpg alt="" />
+      <div class="ml-3 overflow-hidden">
+        <p class="text-sm font-medium text-gray-900 dark:text-white">Panharo</p>
+        <p class="truncate text-sm text-gray-500 dark:text-gray-400">panharo@gmail.com</p>
+      </div>
+    </li>
+    <li class="flex py-4 first:pt-0 last:pb-0  odd:bg-amber-200">
+      <img class="h-10 w-10 rounded-full" src=https://i.pinimg.com/736x/00/57/f1/0057f110c71586c0b4c77a3895bcd451.jpg alt="" />
+      <div class="ml-3 overflow-hidden">
+        <p class="text-sm font-medium text-gray-900 dark:text-white">Panharo</p>
+        <p class="truncate text-sm text-gray-500 dark:text-gray-400">panharo@gmail.com</p>
+      </div>
+    </li>
+    <li class="flex py-4 first:pt-0 last:pb-0  odd:bg-amber-200">
+      <img class="h-10 w-10 rounded-full" src=https://i.pinimg.com/736x/00/57/f1/0057f110c71586c0b4c77a3895bcd451.jpg alt="" />
+      <div class="ml-3 overflow-hidden">
+        <p class="text-sm font-medium text-gray-900 dark:text-white">Panharo</p>
+        <p class="truncate text-sm text-gray-500 dark:text-gray-400">panharo@gmail.com</p>
+      </div>
+    </li>
+</ul>
+<form class="bg-my-color">
+  <label class="block">
+    <span class="">Email</span>
+    <input type="email" class="peer ..." />
+    <p class="invisible peer-invalid:visible ...">Please provide a valid email address.</p>
+  </label>
+</form>
+
+  </body>
+</html>
