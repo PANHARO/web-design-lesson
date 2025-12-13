@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple calculator</title>
+  </head>
+  <body>
+    <h1>The result : <span id="rs">0</span></h1>
+    <fieldset>
+      <legend>Simple Calculator</legend>
+      <!-- insert form calculating -->
+      <form action="" id="calculating-form">
+        <!-- input number 1 -->
+        <label for="number1">Input Number 1: </label>
+        <input type="number" name="number1" id="number1" /><br/> <br>
+        <!-- operator (+ - * /)-->
+        <label for="cal-opt">Choose an operator (+ - * /) to perform: </label>
+        <!-- dropdown to select operator-->
+        <select name="cal-opt" id="cal-opt">
+          <option value="sum">Addition(+)</option>
+          <option value="sub">Substraction(-)</option>
+          <option value="mul">Multiplication(*)</option>
+          <option value="div">Diviation(/)</option>
+        </select>
+        <br /><br />
+        <!-- number 2 -->
+        <label for="number2">Input Number 2: </label>
+        <input type="number" name="number2" id="number2" /><br />
+        <br />
+        <!-- btn calculator -->
+        <input type="submit" value="Calculate" />
+        <!-- btn clear -->
+        <input type="reset" value="Clear" />
+      </form>
+    </fieldset>
+  </body>
+  <!-- the js script perform simple calculating -->
+  <script>
+    const frmCal = document.getElementById("calculating-form");
+    //addEventListener
+    //addEventListener(action, callback function)
+    frmCal.addEventListener("submit", async (e) => {
+      // add prevent reload page
+      e.preventDefault();
+      const InputNumber1 = parseInt(document.getElementById("number1").value);
+      const opt = document.getElementById("cal-opt").value;
+      const InputNumber2 = parseInt(document.getElementById("number2").value);
+      console.log(
+        `Number 1 ${InputNumber1}, Number 2 ${InputNumber2}, Operator ${opt}`
+      );
+
+      let result = 0;
+      // add switch to perform simple calculating
+      switch (opt) {
+        case "sum":
+          result = InputNumber1 + InputNumber2;
+          document.getElementById("rs").innerText = result;
+          console.log("The value of sum: ", result);
+          break;
+        case "sub":
+          result = InputNumber1 - InputNumber2;
+          document.getElementById("rs").innerText = result;
+          console.log("The value of substraction: ", result);
+          break;
+        case "mul":
+          result = InputNumber1 * InputNumber2;
+          document.getElementById("rs").innerText = result;
+          console.log("The value of multiplication: ", result);
+          break;
+        case "div":
+          result = InputNumber1 / InputNumber2;
+          document.getElementById("rs").innerText = result;
+          console.log("The value of diviation: ", result.toFixed(2));
+          break;
+        default:
+          console.log("Out of case");
+          break;
+      }
+    });
+  </script>
+</html>

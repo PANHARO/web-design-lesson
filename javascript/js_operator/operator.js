@@ -171,4 +171,3 @@ if(message== "apple"){
 }else{
     console.log("No option!")
 }
-
