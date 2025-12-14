@@ -1,0 +1,43 @@
+{
+    "users": [
+        {
+            "firstName": "Srorng",
+            "lastName": "Sokcheat",
+            "age": 18,
+            "position": "IT Instructor",
+            "hobbies": [
+                "Listening to music",
+                "Coding challenge",
+                "Walking as exercises"
+            ],
+            "isMarried": false,
+            "salary": 250.00
+        },
+        {
+            "firstName": "Srorng001",
+            "lastName": "Sokcheat001",
+            "age": 18,
+            "position": "IT Instructor",
+            "hobbies": [
+                "Listening to music",
+                "Coding challenge",
+                "Walking as exercises"
+            ],
+            "isMarried": false,
+            "salary": 250.00
+        },
+        {
+            "firstName": "Srorng002",
+            "lastName": "Sokcheat002",
+            "age": 18,
+            "position": "IT Instructor",
+            "hobbies": [
+                "Listening to music",
+                "Coding challenge",
+                "Walking as exercises"
+            ],
+            "isMarried": false,
+            "salary": 250.00
+        }
+    ]
+}

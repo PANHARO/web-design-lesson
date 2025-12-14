@@ -1,0 +1,11 @@
+{
+    "firstName": "Panharo",
+    "lastName": "Keo",
+    "age": 19,
+    "position": "IT instructor",
+    "hobbies": ["Listening to music",
+                "Coding challenge",
+                "Walking as exercises"],
+    "isMarried": false,
+    "salary": 0.00             
+}

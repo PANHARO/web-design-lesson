@@ -1,0 +1,41 @@
+[
+  {
+    "firstName": "Panharo",
+    "lastName": "Keo",
+    "age": 19,
+    "position": "IT instructor",
+    "hobbies": [
+      "Listening to music",
+      "Coding challenge",
+      "Walking as exercises"
+    ],
+    "isMarried": false,
+    "salary": 0.0
+  },
+  {
+    "firstName": "Panharo001",
+    "lastName": "Keo001",
+    "age": 19,
+    "position": "IT instructor",
+    "hobbies": [
+      "Listening to music",
+      "Coding challenge",
+      "Walking as exercises"
+    ],
+    "isMarried": false,
+    "salary": 0.0
+  },
+  {
+    "firstName": "Panharo002",
+    "lastName": "Keo002",
+    "age": 19,
+    "position": "IT instructor",
+    "hobbies": [
+      "Listening to music",
+      "Coding challenge",
+      "Walking as exercises"
+    ],
+    "isMarried": false,
+    "salary": 0.0
+  }
+]
