@@ -10,7 +10,8 @@
       "Walking as exercises"
     ],
     "isMarried": false,
-    "salary": 0.0
+    "salary": 0.0,
+    "image_url": "https://i.pinimg.com/736x/85/68/0a/85680a975d5c82184c3af1722783632f.jpg"
   },
   {
     "firstName": "Panharo001",
@@ -23,7 +24,8 @@
       "Walking as exercises"
     ],
     "isMarried": false,
-    "salary": 0.0
+    "salary": 0.0,
+    "image_url": "https://i.pinimg.com/736x/85/68/0a/85680a975d5c82184c3af1722783632f.jpg"
   },
   {
     "firstName": "Panharo002",
@@ -36,6 +38,21 @@
       "Walking as exercises"
     ],
     "isMarried": false,
-    "salary": 0.0
+    "salary": 0.0,
+    "image_url": "https://i.pinimg.com/736x/85/68/0a/85680a975d5c82184c3af1722783632f.jpg"
+  },
+  {
+    "firstName": "Panharo002",
+    "lastName": "Keo002",
+    "age": 19,
+    "position": "IT instructor",
+    "hobbies": [
+      "Listening to music",
+      "Coding challenge",
+      "Walking as exercises"
+    ],
+    "isMarried": false,
+    "salary": 0.0,
+    "image_url": "https://i.pinimg.com/736x/85/68/0a/85680a975d5c82184c3af1722783632f.jpg"
   }
 ]
