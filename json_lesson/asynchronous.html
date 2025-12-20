@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./index.js"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- create product -->
+    <button id="btn-create">Create Product</button>
+  </body>
+  <!-- script about async/await -->
+  <script>
+        // get
+        async function apiRes(){
+            let response = await fetch('https://jsonplaceholder.typicode.com/comments')
+            let data = await response.json();
+            console.log(data);
+            return data;
+        }
+        // console.log(`The data: ${apiRes()}`);
+        apiRes();
+    //     [POST] https://api.escuelajs.co/api/v1/products/
+    // # Body
+    // {
+    //   "title": "New Product",
+    //   "price": 10,
+    //   "description": "A description",
+    //   "categoryId": 1,
+    //   "images": ["https://placehold.co/600x400"]
+    // }
+        // create product
+        const btnCreate = document.getElementById("btn-create");
+        const base_url = "https://jsonplaceholder.typicode.com/comments";
+        btnCreate.addEventListener('click', async()=>{
+            // perform about create product into api
+            // new prooduct prepare for post into api
+        const newProduct = {
+      title: "New Product",
+      price: 10,
+      description: "A description",
+      categoryId: 1,
+      images: ["https://placehold.co/600x400"]
+    };
+        // mechanism for post new product in api
+        try{
+            new res = await fetch(base_url, {
+            method: "POST",
+            headers:{
+                'Content-Type': "application/json"
+            },
+            body: JSON.stringify(newProduct) // convert object of new product into json
+
+        });if(res.ok){
+            return await res.json();
+        }else{
+            return 'You cant create new product';
+        }
+
+        }catch{
+            console.log(error);
+        }
+
+        })
+  </script>
 </html>
